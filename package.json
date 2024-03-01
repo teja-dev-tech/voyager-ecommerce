@@ -1,0 +1,37 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "ecommerce rest api",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "server": "node server.js",
+    "build": "npm build --prefix ./client",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "techWithTeja",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.1",
+    "bcrypt": "^5.1.0",
+    "braintree": "^3.17.0",
+    "braintree-web-drop-in-react": "^1.2.1",
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "morgan": "^1.10.0",
+    "react-icons": "^4.7.1",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
